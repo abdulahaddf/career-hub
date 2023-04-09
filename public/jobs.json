@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "logo": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+      "companyName": "Google",
+      "jobType": "Remote",
+      "employmentType": "Full-time",
+      "location": "Silicon valley , USA",
+      "salaryRange": "$120,000 - $180,000",
+      "description": "We are seeking a talented software engineer to join our team!",
+      "jobResponsibility": "Design and develop software, participate in code reviews, collaborate with cross-functional teams to deliver high-quality software products.",
+      "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+      "experience": "3+ years of experience in software engineering",
+      "contactInformation": {
+        "phone": "555-555-5555",
+        "email": "jobs@google.com",
+        "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043"
+      }
+    },
+    {
+      "id": 2,
+      "logo": "https://en.wikipedia.org/wiki/Microsoft#/media/File:Microsoft_logo_(2012).svg",
+      "companyName": "Microsoft",
+      "jobType": "Remote",
+      "employmentType": "Full-time",
+      "location": "Washington, USA",
+      "salaryRange": "$130,000 - $200,000",
+      "description": "We are seeking a talented software engineer to join our team!",
+      "jobResponsibility": "Design and develop software, participate in code reviews, collaborate with cross-functional teams to deliver high-quality software products.",
+      "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+      "experience": "5+ years of experience in software engineering",
+      "contactInformation": {
+        "phone": "555-555-5555",
+        "email": "jobs@microsoft.com",
+        "address": "One Microsoft Way, Redmond, WA 98052"
+      }
+    },
+    {
+      "id": 3,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2000px-Netflix_2015_logo.svg.png",
+      "companyName": "Netflix",
+      "jobType": "Remote",
+      "employmentType": "Full-time",
+      "location": "New York, USA",
+      "salaryRange": "$100,000 - $150,000",
+      "description": "We are seeking a talented software engineer to join our team!",
+      "jobResponsibility": "Design and develop software, participate in code reviews, collaborate with cross-functional teams to deliver high-quality software products.",
+      "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+      "experience": "3+ years of experience in software engineering",
+      "contactInformation": {
+        "phone": "555-555-5555",
+        "email": "jobs@netflix.com",
+        "address": "100 Winchester Cir, Los Gatos, CA 95032"
+      }
+    },
+    {
+      "id": 4,
+      "logo": "https://en.wikipedia.org/wiki/Amazon_(company)#/media/File:Amazon_logo.svg",
+      "companyName": "Amazon",
+      "jobType": "Remote",
+      "employmentType": "Full-time",
+      "location": "Washington, USA",
+      "salaryRange": "$100,000 - $150,000",
+      "description": "We are seeking a talented software engineer to join our team!",
+      "jobResponsibility": "Design and develop software, participate in code reviews, collaborate with cross-functional teams to deliver high-quality software products.",
+      "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+      "experience": "3+ years of experience in software engineering",
+      "contactInformation": {
+      "phone": "555-555-5555",
+      "email": "jobs@amazon.com",
+      "address": "410 Terry Ave N, Seattle, WA 98109"
+      }
+      },
+      {
+      "id": 5,
+      "logo": "https://en.wikipedia.org/wiki/Intel#/media/File:Intel_logo_2023.svg",
+      "companyName": "Intel",
+      "jobType": "Local",
+      "employmentType": "Full-time",
+      "location": "California, United States",
+      "salaryRange": "$150,000 - $250,000",
+      "description": "We are seeking a talented hardware engineer to join our team!",
+      "jobResponsibility": "Design and develop hardware, participate in code reviews, collaborate with cross-functional teams to deliver high-quality hardware products.",
+      "educationalRequirements": "Master's degree in Electrical Engineering or related field",
+      "experience": "7+ years of experience in hardware engineering",
+      "contactInformation": {
+      "phone": "555-555-5555",
+      "email": "jobs@intel.com",
+      "address": "2200 Mission College Blvd, Santa Clara, California, United States 95054"
+      }
+      },
+      {
+      "id": 6,
+      "logo": "https://en.wikipedia.org/wiki/Tesla,_Inc.#/media/File:Tesla_Motors.svg",
+      "companyName": "Tesla",
+      "jobType": "Local",
+      "employmentType": "Full-time",
+      "location": "Austin, Texas, United States",
+      "salaryRange": "$120,000 - $180,000",
+      "description": "We are seeking a talented software engineer to join our team!",
+      "jobResponsibility": "Design and develop software, participate in code reviews, collaborate with cross-functional teams to deliver high-quality software products.",
+      "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+      "experience": "3+ years of experience in software engineering",
+      "contactInformation": {
+      "phone": "555-555-5555",
+      "email": "jobs@tesla.com",
+      "address": "45500 Fremont Blvd, Austin, Texas, United States 94538"
+      }
+      }
+      ]
+  

@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "First Object",
+      "details": "Details for first object",
+      "picture": "https://example.com/picture1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Second Object",
+      "details": "Details for second object",
+      "picture": "https://example.com/picture2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Third Object",
+      "details": "Details for third object",
+      "picture": "https://example.com/picture3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Fourth Object",
+      "details": "Details for fourth object",
+      "picture": "https://example.com/picture4.jpg"
+    }
+  ]
