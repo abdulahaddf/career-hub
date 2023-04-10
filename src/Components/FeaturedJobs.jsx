@@ -2,16 +2,16 @@ import React, { useEffect, useState } from "react";
 
 const FeaturedJobs = ({ jobs }) => {
   return (
-    <div className="w-fit mx-auto my-5 md:my-20">
+    <div className=" my-5 md:my-20">
     <div className="text-center">
     <h1 className="title ">Featured Jobs</h1>
     <p>
     Explore thousands of job opportunities with all the information you need. Its your future
     </p>
     </div>
-    <div className="grid md:grid-cols-2 gap-12 my-5 ">
+    <div className="grid md:grid-cols-2 gap-12 my-5 w-11/12 mx-auto ">
 
-      {jobs.map((job) => (
+      {jobs.slice(0,4).map((job) => (
             //   const {logo, companyName, jobType, employmentType, location, salaryRange } = job;
           <div className="card w-3/4 mx-auto glass p-5">
           <figure>
@@ -31,14 +31,14 @@ const FeaturedJobs = ({ jobs }) => {
             </div>
 
               <button className="btn btn-primary">View Details</button>
-
-
-           
-            
           </div>
         </div>
       ))}
     </div>
+    <div className="mx-auto w-fit">
+    <button className="btn btn-primary ">Show More</button>
+    </div>
+
     </div>
   );
 };
