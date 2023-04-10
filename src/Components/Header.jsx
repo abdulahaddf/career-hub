@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='flex justify-evenly my-6 items-center'>
+        <div className='md:flex mx-auto justify-evenly py-6 items-center bg-gray-100'>
             <div>
                 <h1 className='text-xl font-bold'>JobHunter</h1>
             </div>
