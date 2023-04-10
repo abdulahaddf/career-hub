@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const FeaturedJobs = ({ jobs }) => {
   return (
@@ -30,13 +31,15 @@ const FeaturedJobs = ({ jobs }) => {
                 <div >Salary:{job.salaryRange}</div>
             </div>
 
-              <button className="btn btn-primary">View Details</button>
+              <Link to="/JobDetails" className="btn btn-primary">View Details</Link>
           </div>
         </div>
       ))}
     </div>
     <div className="mx-auto w-fit">
-    <button className="btn btn-primary ">Show More</button>
+    {/* <Link to="./JobDetails.jsx" className="btn btn-primary ">Show More</Link> */}
+    <button className="btn btn-primary">Show More</button>
+    
     </div>
 
     </div>

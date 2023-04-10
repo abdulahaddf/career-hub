@@ -8,6 +8,9 @@ import App from './App'
 import './index.css'
 import ErrorPage from './Components/ErrorPage'
 import Home from './Components/Home'
+import CustomShapeBarChart from './Components/CustomShapeBarChart';
+import Blog from './Components/Blog';
+import JobDetails from './Components/JobDetails';
 
 
 const router = createBrowserRouter([
@@ -18,6 +21,9 @@ const router = createBrowserRouter([
     // loader: productsAndCartData,
     children: [
       { path: '/', element: <Home></Home> },
+      { path: '/statistics', element: <CustomShapeBarChart></CustomShapeBarChart>  },
+      { path: '/blog', element: <Blog></Blog>  },
+      { path: '/jobDetails', element:<JobDetails></JobDetails>  },
      
     ],
   },

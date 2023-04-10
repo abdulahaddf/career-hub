@@ -4,10 +4,11 @@ import Hero from './Hero';
 import Catagory from './Catagory';
 import FeaturedJobs from './FeaturedJobs';
 
+
 const Home = () => {
     
     const [jobs, setJobs] = useState([]);
-    console.log(jobs);
+    // console.log(jobs);
   
     useEffect(() => {
       const url = "jobs.json";
@@ -30,6 +31,7 @@ const Home = () => {
         <Hero></Hero>
         <Catagory></Catagory>
         <FeaturedJobs jobs={jobs}></FeaturedJobs>
+      
        </div>
     );
 };
