@@ -6,7 +6,7 @@ const Header = () => {
         <div className='md:flex mx-auto justify-evenly py-6 items-center bg-gray-100'>
             <div>
                 {/* <h1 className='text-xl font-bold'>JobHunter</h1> */}
-                <Link to="/" className='text-xl font-bold'>JobHunter</Link>
+                <Link to="/" className='text-3xl font-bold'>JobHunter</Link>
             </div>
             <div className='text-xl font-semibold'>
                 <Link to="/statistics" className='mx-3'>Statistics</Link> 

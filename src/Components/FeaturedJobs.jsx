@@ -20,8 +20,8 @@ const FeaturedJobs = ({ jobs }) => {
               src={job.logo} alt="icon" className="w-64 md:w-9/12" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{job.jobTitle}</h2>
-            <h4>{job.companyName}</h4>
+            <h2 className="card-title ">{job.jobTitle}</h2>
+            <h4 className="text-xl font-bold">{job.companyName}</h4>
             <div className="md:flex  text-center">
                 <div className="border mx-1 my-2 md:my-0 border-cyan-500 bg-cyan-500 rounded-md p-1 text-white">{job.jobType}</div>
                 <div className="border mx-1 border-cyan-500 bg-cyan-500 rounded-md p-1 text-white">{job.employmentType}</div>

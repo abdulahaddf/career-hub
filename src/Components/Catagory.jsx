@@ -28,7 +28,7 @@ const Catagory = () => {
         need. Its your future
       </p>
       <div className="md:flex">
-        {catagories.map((cat) => (
+        {catagories.map((cat) => 
             <div className="card w-64 bg-base-100 shadow-xl mr-4 my-5 text-center">
             <figure>
               <img
@@ -45,7 +45,7 @@ const Catagory = () => {
             </div>
           </div>
           
-        ))}
+        )}
       </div>
     </div>
   );
