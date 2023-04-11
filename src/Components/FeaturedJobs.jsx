@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
-const FeaturedJobs = ({ jobs }) => {
+const FeaturedJobs = () => {
+    const jobs = useLoaderData()
+
+
+
+
+
   return (
     <div className=" my-5 md:my-20">
     <div className="text-center">
@@ -30,14 +36,13 @@ const FeaturedJobs = ({ jobs }) => {
                 <div >{job.location}</div>
                 <div >Salary:{job.salaryRange}</div>
             </div>
-
-              <Link to="/JobDetails" className="btn btn-primary">View Details</Link>
+                
+              <Link to={`jobDetails/${job.id}`} className="btn btn-primary">View Details</Link>
           </div>
         </div>
       ))}
     </div>
     <div className="mx-auto w-fit">
-    {/* <Link to="./JobDetails.jsx" className="btn btn-primary ">Show More</Link> */}
     <button className="btn btn-primary">Show More</button>
     
     </div>

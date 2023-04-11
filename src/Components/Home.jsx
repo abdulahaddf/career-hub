@@ -5,36 +5,34 @@ import Catagory from './Catagory';
 import FeaturedJobs from './FeaturedJobs';
 
 
-// export const JobsData = createContext([]);
 const Home = () => {
     
-    const [jobs, setJobs] = useState([]);
-    // console.log(jobs);
+    // const [jobs, setJobs] = useState([]);
+    // // console.log(jobs);
   
-    useEffect(() => {
-      const url = "jobs.json";
+    // useEffect(() => {
+    //   const url = "jobs.json";
   
-      const fetchData = async () => {
-        try {
-          const response = await fetch(url);
-          const json = await response.json();
-          setJobs(json);
-        } catch (error) {
-          console.log("error", error);
-        }
-      };
+    //   const fetchData = async () => {
+    //     try {
+    //       const response = await fetch(url);
+    //       const data = await response.json();
+    //       setJobs(data);
+    //     } catch (error) {
+    //       console.log("error", error);
+    //     }
+    //   };
   
-      fetchData();
-    }, []);
+    //   fetchData();
+    // }, []);
 
     return (
        <div>
-        {/* <JobsData.Provider value="jobs"> */}
+      
         <Hero></Hero>
         <Catagory></Catagory>
-        <FeaturedJobs jobs={jobs} key={jobs.id}></FeaturedJobs>
+        <FeaturedJobs ></FeaturedJobs>
        
-        {/* </JobsData.Provider> */}
       
        </div>
     );

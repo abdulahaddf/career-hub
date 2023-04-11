@@ -55,7 +55,7 @@ const data = [
 export default function App() {
   return (
     <div style={{ width: "100%", height: 300 }}>
-        <h1 className="text-5xl font-bold text-center my-24">Here is the Statistics of my marks of assignment</h1>
+        <h1 className="text-5xl font-bold text-center mb-24 h-32 bg-gray-100 ">Here is the Statistics of my marks of assignment</h1>
       <ResponsiveContainer>
         <AreaChart
           data={data}

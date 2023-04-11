@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import ReactDOM from 'react-dom/client'
 import {
   createBrowserRouter,
@@ -18,12 +18,20 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     errorElement: <ErrorPage/>,
-    // loader: productsAndCartData,
+    
     children: [
-      { path: '/', element: <Home></Home> },
-      { path: '/statistics', element: <CustomShapeBarChart></CustomShapeBarChart>  },
-      { path: '/blog', element: <Blog></Blog>  },
-      { path: '/jobDetails', element:<JobDetails></JobDetails>  },
+      { path: '/',
+       element: <Home></Home>,
+       loader: () => fetch('jobs.json'),},
+      { path: 'jobDetails/:id', 
+      element:<JobDetails></JobDetails>,
+      loader:async ({params}) => {
+        const job = await fetch('jobs.json')
+        const details =await job.json()
+        return details.find(detail => detail.id == params.id)
+      }},
+      { path: 'statistics', element: <CustomShapeBarChart></CustomShapeBarChart>  },
+      { path: 'blog', element: <Blog></Blog>  },
      
     ],
   },
