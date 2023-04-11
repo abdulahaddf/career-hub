@@ -23,7 +23,7 @@ setSortedJobs(jobs)
     Explore thousands of job opportunities with all the information you need. Its your future
     </p>
     </div>
-    <div className="grid md:grid-cols-2 gap-12 my-5 w-11/12 mx-auto ">
+    <div className="grid md:grid-cols-2 gap-3 md:gap-12 my-5 w-11/12 mx-auto ">
 
       {sortedJobs.map((job) => (
             
@@ -50,7 +50,7 @@ setSortedJobs(jobs)
       ))}
     </div>
     <div className="mx-auto w-fit">
-    <button onClick={showAll} className="btn md:btn-primary ">Show More</button>
+    <button onClick={showAll} className="btn btn-primary ">Show More</button>
     
     </div>
 

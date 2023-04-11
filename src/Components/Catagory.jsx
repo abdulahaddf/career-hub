@@ -27,9 +27,9 @@ const Catagory = () => {
         Explore thousands of job opportunities with all the information you
         need. Its your future
       </p>
-      <div className="md:flex">
+      <div className="md:flex md:my-8">
         {catagories.map((cat) => 
-            <div className="card w-64 bg-base-100 shadow-xl mr-4 my-5 text-center" key={cat.id}>
+            <div className="card w-64 mx-auto bg-base-100 shadow-xl mr-4 my-5 text-center" key={cat.id}>
             <figure>
               <img
                 src={cat.picture}
