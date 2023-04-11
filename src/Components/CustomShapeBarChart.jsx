@@ -22,7 +22,7 @@ const data = [
   },
   {
     name: "Assignment 3",
-    Marks: 55,
+    Marks: 60,
     
   },
   {
@@ -32,7 +32,7 @@ const data = [
   },
   {
     name: "Assignment 5",
-    Marks: 50,
+    Marks: 60,
     
   },
   {
@@ -54,15 +54,15 @@ const data = [
 
 export default function App() {
   return (
-    <div style={{ width: "100%", height: 300 }}>
+    <div style={{ width: "100%", height: 400, }}>
         <h1 className="text-5xl font-bold text-center mb-24 h-32 bg-gray-100 ">Here is the Statistics of my marks of assignment</h1>
       <ResponsiveContainer>
         <AreaChart
           data={data}
           margin={{
             top: 10,
-            right: 30,
-            left: 0,
+            right: 60,
+            left: 20,
             bottom: 0
           }}
         >

@@ -3,9 +3,16 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const FeaturedJobs = () => {
     const jobs = useLoaderData()
+    const [sortedJobs, setSortedJobs] = useState([])
+    // const [jobss, setJobss] = useState([])
 
-
-
+useEffect((() => {
+    setSortedJobs(jobs.slice(0,4))
+}
+),[])
+const showAll = () => {
+setSortedJobs(jobs)
+}
 
 
   return (
@@ -18,7 +25,7 @@ const FeaturedJobs = () => {
     </div>
     <div className="grid md:grid-cols-2 gap-12 my-5 w-11/12 mx-auto ">
 
-      {jobs.slice(0,4).map((job) => (
+      {sortedJobs.map((job) => (
             //   const {logo, companyName, jobType, employmentType, location, salaryRange } = job;
           <div className="card w-3/4 mx-auto glass p-5">
           <figure>
@@ -43,7 +50,7 @@ const FeaturedJobs = () => {
       ))}
     </div>
     <div className="mx-auto w-fit">
-    <button className="btn btn-primary">Show More</button>
+    <button onClick={showAll} className="btn btn-primary">Show More</button>
     
     </div>
 

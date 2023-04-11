@@ -2,9 +2,7 @@ import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 
 const JobDetails = () => {
-    // const jobs = useContext(jobs);
-    // console.log(jobs);
-    // const {id} = useParams()
+    
     const jobs = useLoaderData();
     console.log(jobs);
 
