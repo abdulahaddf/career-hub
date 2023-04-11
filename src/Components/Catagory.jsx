@@ -29,7 +29,7 @@ const Catagory = () => {
       </p>
       <div className="md:flex">
         {catagories.map((cat) => 
-            <div className="card w-64 bg-base-100 shadow-xl mr-4 my-5 text-center">
+            <div className="card w-64 bg-base-100 shadow-xl mr-4 my-5 text-center" key={cat.id}>
             <figure>
               <img
                 src={cat.picture}

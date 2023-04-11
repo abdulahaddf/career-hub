@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "1",
       "logo": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
       "companyName": "Google",
       "jobTitle": "Software Engineer",
@@ -19,7 +19,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "logo": "https://i.ibb.co/y0Zt9GK/Microsoft-logo-2012-svg.png",
       "companyName": "Microsoft",
       "jobTitle": "Data Scientist",
@@ -38,7 +38,7 @@
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2000px-Netflix_2015_logo.svg.png",
       "companyName": "Netflix",
       "jobTitle": "UX Designer",
@@ -57,7 +57,7 @@
       }
     },
     {
-      "id": 4,
+      "id": "4",
       "logo": "https://i.ibb.co/sRGSxrC/Amazon-logo-svg.png",
       "companyName": "Amazon",
       "jobTitle": "Cybersecurity Analyst",
@@ -76,7 +76,7 @@
       }
       },
       {
-      "id": 5,
+      "id": "5",
       "logo": "https://i.ibb.co/p462F5D/Intel-logo-2023-svg.png",
       "companyName": "Intel",
       "jobTitle": "Machine Learning Engineer",
@@ -95,7 +95,7 @@
       }
       },
       {
-      "id": 6,
+      "id": "6",
       "logo": "https://i.ibb.co/LSyBfCQ/Tesla-Logo-Transparent.png",
       "companyName": "Tesla",
       "jobTitle": "DevOps Engineer",

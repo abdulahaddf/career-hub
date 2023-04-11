@@ -27,7 +27,7 @@ setSortedJobs(jobs)
 
       {sortedJobs.map((job) => (
             
-          <div className="card w-3/4 mx-auto glass p-5">
+          <div className="card w-3/4 mx-auto glass p-5" key={job.id}>
           <figure>
             <img
               src={job.logo} alt="icon" className="w-64 md:w-9/12" />

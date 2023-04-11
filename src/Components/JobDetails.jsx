@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
-import { addToDb } from '../Utils/fakedb';
+import { addToDb } from '../Utils/fakeDb';
 
 const JobDetails = () => {
     
