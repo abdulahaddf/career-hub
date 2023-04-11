@@ -22,11 +22,11 @@ const router = createBrowserRouter([
     children: [
       { path: '/',
        element: <Home></Home>,
-       loader: () => fetch('jobs.json'),},
+       loader: () => fetch('/jobs.json'),},
       { path: 'jobDetails/:id', 
       element:<JobDetails></JobDetails>,
       loader:async ({params}) => {
-        const job = await fetch('jobs.json')
+        const job = await fetch('/jobs.json')
         const details =await job.json()
         return details.find(detail => detail.id == params.id)
       }},
