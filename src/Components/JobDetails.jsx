@@ -1,13 +1,17 @@
 import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { addToDb } from '../Utils/fakedb';
 
 const JobDetails = () => {
     
     const jobs = useLoaderData();
-    console.log(jobs);
 
     const { id, logo, companyName, jobTitle, jobType, employmentType, location, salaryRange, description, jobResponsibility, educationalRequirements, experience, contactInformation } = jobs;
     const { phone, email, address } = contactInformation;
+
+    const haldleApplied = () => {
+        localStorage.setItem(key='job', value='google')
+    }
 
 
     return (
@@ -35,7 +39,7 @@ const JobDetails = () => {
                     <p> <span className='text-md font-semibold'>Address: </span>{address}</p>
                 </div>
                 <div className='mx-auto w-fit'>
-                <button className='btn btn-primary'>Apply Now</button>
+                <button onClick={() => addToDb(id)} className='btn btn-primary'>Apply Now</button>
                 </div>
             </div>
         </div>

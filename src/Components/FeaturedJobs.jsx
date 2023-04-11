@@ -26,7 +26,7 @@ setSortedJobs(jobs)
     <div className="grid md:grid-cols-2 gap-12 my-5 w-11/12 mx-auto ">
 
       {sortedJobs.map((job) => (
-            //   const {logo, companyName, jobType, employmentType, location, salaryRange } = job;
+            
           <div className="card w-3/4 mx-auto glass p-5">
           <figure>
             <img

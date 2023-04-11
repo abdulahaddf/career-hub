@@ -6,7 +6,7 @@ const Blog = () => {
       <h1 className="text-5xl font-bold text-center bg-gray-100 h-32">
         Welcome to my Blog
       </h1>
-      <div className="grid md:grid-cols-2 gap-5 py-10">
+      <div className="grid md:grid-cols-2 gap-5 p-10">
         <div className="card glass p-5">
           <h1 className="text-xl font-semibold">When should you use context API?</h1>
           <p>

@@ -11,6 +11,7 @@ import Home from './Components/Home'
 import CustomShapeBarChart from './Components/CustomShapeBarChart';
 import Blog from './Components/Blog';
 import JobDetails from './Components/JobDetails';
+import AppliedJobs from './Components/AppliedJobs';
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,8 @@ const router = createBrowserRouter([
       }},
       { path: 'statistics', element: <CustomShapeBarChart></CustomShapeBarChart>  },
       { path: 'blog', element: <Blog></Blog>  },
+      { path: 'appliedjobs', element: <AppliedJobs></AppliedJobs>,
+      loader: () => fetch('/jobs.json'),  },
      
     ],
   },
