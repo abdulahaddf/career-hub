@@ -6,7 +6,7 @@ const JobDetails = () => {
     
     const jobs = useLoaderData();
 
-    const { id, logo, companyName, jobTitle, jobType, employmentType, location, salaryRange, description, jobResponsibility, educationalRequirements, experience, contactInformation } = jobs;
+    const { id, jobTitle, salaryRange, description, jobResponsibility, educationalRequirements, experience, contactInformation } = jobs;
     const { phone, email, address } = contactInformation;
 
     const haldleApplied = () => {
@@ -19,7 +19,7 @@ const JobDetails = () => {
           <div className='bg-gray-100 '>
             <h1 className='text-5xl font-bold text-center h-32'>Job details</h1>
         </div>
-        <div className='md:flex max-w-6xl mx-auto my-5 p-2 '>
+        <div className='glass shadow-xl md:flex max-w-6xl mx-auto my-5 p-2 '>
             <div className='leading-10'>
                 <h1><span className='font-bold text-lg'>Job Description:</span>{description}</h1>
                 <h1><span className='font-bold text-lg'>Job Responsibility:</span>{jobResponsibility}</h1>

@@ -36,8 +36,8 @@ setSortedJobs(jobs)
             <h2 className="card-title ">{job.jobTitle}</h2>
             <h4 className="text-xl font-bold">{job.companyName}</h4>
             <div className="md:flex  text-center">
-                <div className="border mx-1 my-2 md:my-0 border-cyan-500 bg-cyan-500 rounded-md p-1 text-white">{job.jobType}</div>
-                <div className="border mx-1 border-cyan-500 bg-cyan-500 rounded-md p-1 text-white">{job.employmentType}</div>
+                <div className="btn btn-outline btn-success btn-sm mx-1 my-2 md:my-0  rounded-md p-1 text-white">{job.jobType}</div>
+                <div className="btn btn-outline btn-success btn-sm mx-1 my-2 md:my-0  rounded-md p-1 text-white">{job.employmentType}</div>
             </div>
             <div className="md:flex md:justify-between">
                 <div >{job.location}</div>
@@ -50,7 +50,7 @@ setSortedJobs(jobs)
       ))}
     </div>
     <div className="mx-auto w-fit">
-    <button onClick={showAll} className="btn btn-primary">Show More</button>
+    <button onClick={showAll} className="btn md:btn-primary ">Show More</button>
     
     </div>
 

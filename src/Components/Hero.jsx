@@ -8,7 +8,7 @@ const Hero = () => {
             <p>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
             <button className='btn btn-primary my-2'>Get Started</button>
         </div>
-        <div><img src="/public/All Images/hero.png" className='w-64 md:w-96' alt="" /></div>
+        <div><img src="./All Images/hero.png" className='w-64 md:w-96' alt="" /></div>
         
     </div>
     );
