@@ -17,22 +17,22 @@ const AppliedCarts = ({ job }) => {
               <h4 className="text-xl font-bold">{job.companyName}</h4>
             </div>
             <div className="md:flex  text-center">
-              <div className="btn btn-outline btn-success btn-sm mx-1 my-2 md:my-0  rounded-md p-1 text-white">
+              <div className="btn btn-outline btn-success btn-sm mx-1 my-2 rounded-md p-1 text-white">
                 {job.jobType}
               </div>
-              <div className="btn btn-outline btn-success btn-sm mx-1 my-2 md:my-0  rounded-md p-1 text-white">
+              <div className="btn btn-outline btn-success btn-sm mx-1 my-2 rounded-md p-1 text-white">
                 {job.employmentType}
               </div>
             </div>
 
             <div className="md:flex md:justify-between">
               <p>{job.location}</p>
-              <p>  Salary:{job.salaryRange}</p>
+              <p><span className="font-medium">Salary:</span>{job.salaryRange}</p>
             </div>
           </div>
 
           <div>
-            <Link to={`jobDetails/${job.id}`} className="btn btn-primary">
+            <Link to={`/${job.id}`} className="btn btn-primary">
               View Details
             </Link>
           </div>

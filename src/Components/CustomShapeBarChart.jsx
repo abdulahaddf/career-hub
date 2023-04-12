@@ -54,7 +54,7 @@ const data = [
 
 export default function App() {
   return (
-    <div className="w-5/6 h-96 mb-64 mx-auto">
+    <div className="h-96 mb-64 mx-auto">
         <h1 className="text-5xl font-bold text-center mb-24 h-32 bg-gray-100 ">Here is the Statistics of my marks of assignment</h1>
       <ResponsiveContainer>
         <AreaChart

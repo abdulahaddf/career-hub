@@ -23,7 +23,7 @@ setSortedJobs(jobs)
     Explore thousands of job opportunities with all the information you need. Its your future
     </p>
     </div>
-    <div className="grid md:grid-cols-2 gap-3 md:gap-12 my-5 w-11/12 mx-auto ">
+    <div className="grid md:grid-cols-2 gap-3 md:gap-8 my-5 w-5/6 md:mt-16 mx-auto ">
 
       {sortedJobs.map((job) => (
             
@@ -36,15 +36,15 @@ setSortedJobs(jobs)
             <h2 className="card-title ">{job.jobTitle}</h2>
             <h4 className="text-xl font-bold">{job.companyName}</h4>
             <div className="md:flex  text-center">
-                <div className="btn btn-outline btn-success btn-sm mx-1 my-2 md:my-0  rounded-md p-1 text-white">{job.jobType}</div>
-                <div className="btn btn-outline btn-success btn-sm mx-1 my-2 md:my-0  rounded-md p-1 text-white">{job.employmentType}</div>
+                <div className="btn btn-outline btn-success btn-sm mx-1 my-2 rounded-md p-1 text-white">{job.jobType}</div>
+                <div className="btn btn-outline btn-success btn-sm mx-1 my-2 rounded-md p-1 text-white">{job.employmentType}</div>
             </div>
             <div className="md:flex md:justify-between">
-                <div >{job.location}</div>
-                <div >Salary:{job.salaryRange}</div>
+                <div className="flex"><img src="https://img.icons8.com/material-outlined/24/null/address.png"/>{job.location}</div>
+                <div ><span className="font-medium">Salary: </span>{job.salaryRange}</div>
             </div>
                 
-              <Link to={`jobDetails/${job.id}`} className="btn btn-primary">View Details</Link>
+              <Link to={`/${job.id}`} className="btn btn-primary">View Details</Link>
           </div>
         </div>
       ))}
