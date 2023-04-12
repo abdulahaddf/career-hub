@@ -4,7 +4,7 @@ import { Link, useLoaderData } from "react-router-dom";
 const FeaturedJobs = () => {
     const jobs = useLoaderData()
     const [sortedJobs, setSortedJobs] = useState([])
-    // const [jobss, setJobss] = useState([])
+  
 
 useEffect((() => {
     setSortedJobs(jobs.slice(0,4))
@@ -13,8 +13,6 @@ useEffect((() => {
 const showAll = () => {
 setSortedJobs(jobs)
 }
-
-
   return (
     <div className=" my-5 md:my-20">
     <div className="text-center">
