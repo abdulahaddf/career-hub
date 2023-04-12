@@ -1,4 +1,27 @@
-# b7a9-career-hub-abdulahaddf
-b7a9-career-hub-abdulahaddf created by GitHub Classroom
 
-Welcome to Job Hunter
+Job Hunter
+
+
+
+
+## Installation
+
+Install my-project with npm
+
+```bash
+  npm install my-project
+  cd my-project
+```
+    
+## Features
+
+- Job listing
+- Mobile resposive
+- Statistical data
+- Blog posts
+
+
+## Live Website
+
+https://job-hunter-df.netlify.app/
+
