@@ -9,13 +9,13 @@ const Header = () => {
                 <Link to="/" className='text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-teal-500 hover:to-teal-300 inline-block text-transparent bg-clip-text'>JobHunter</Link>
             </div>
             <div className='text-xl font-semibold my-2'>
-                <Link to="/statistics" className='mx-3'>Statistics</Link> 
+                <Link to="/" className='mx-3'>Home</Link> 
                 <Link to="/appliedJobs" className='mx-3'>Applied Jobs</Link> 
-                <Link to="/blog" className='mx-3'>Blog</Link> 
+              
             </div>
             <div>
                 <button className='btn btn-primary'>
-                    Start Applying
+                    Log In
                 </button>
             </div>
         </div>
