@@ -1,28 +1,27 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
+import SearchBox from "./SearchBox";
 
-const FeaturedJobs = () => {
-  const jobs = useLoaderData();
-  const [sortedJobs, setSortedJobs] = useState([]);
 
-  useEffect(() => {
-    setSortedJobs(jobs.slice(0, 4));
-  }, []);
-  const showAll = () => {
-    setSortedJobs(jobs);
-  };
-  return (
-    <div className=" my-5 md:my-20">
+const AllJobs = () => {
+    const jobs = useLoaderData();
+   
+  
+   
+  
+    return (
+        <div className=" my-5 md:my-10">
       <div className="text-center">
-        <h1 className="title ">Featured Jobs</h1>
+        <h1 className="title ">All Jobs</h1>
         <p>
           Explore thousands of job opportunities with all the information you
           need. Its your future
         </p>
+            <SearchBox></SearchBox> 
       </div>
-      <div className="grid md:grid-cols-2 gap-3 md:gap-8 my-5 w-5/6 md:mt-16 mx-auto ">
-        {sortedJobs.map((job) => (
-          <div className="card w-3/4 mx-auto glass p-5" key={job.id}>
+      <div className="grid md:grid-cols-3 gap-8 md:gap-5 md:mt-16 mx-auto ">
+        {jobs.map((job) => (
+          <div className="card  mx-auto glass p-5" key={job.id}>
             <figure>
               <img src={job.logo} alt="icon" className="w-64 md:w-9/12" />
             </figure>
@@ -54,13 +53,9 @@ const FeaturedJobs = () => {
           </div>
         ))}
       </div>
-      <div className="mx-auto w-fit">
-        <button onClick={showAll} className="btn btn-primary ">
-          Show More
-        </button>
-      </div>
+     
     </div>
-  );
+    );
 };
 
-export default FeaturedJobs;
+export default AllJobs;

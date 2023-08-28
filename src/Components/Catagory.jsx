@@ -2,10 +2,8 @@ import React, { useEffect, useState } from "react";
 
 const Catagory = () => {
   const [catagories, setCatagory] = useState([]);
-  // console.log(catagories);
-
   useEffect(() => {
-    const url = "catagories.json";
+    const url = "https://career-server.vercel.app/category";
 
     const fetchData = async () => {
       try {
@@ -16,7 +14,6 @@ const Catagory = () => {
         console.log("error", error);
       }
     };
-
     fetchData();
   }, []);
 
@@ -28,24 +25,20 @@ const Catagory = () => {
         need. Its your future
       </p>
       <div className="md:flex md:my-8">
-        {catagories.map((cat) => 
-            <div className="card w-64 mx-auto bg-base-100 shadow-xl mr-4 my-5 text-center" key={cat.id}>
+        {catagories.map((cat) => (
+          <div
+            className="card w-64 mx-auto bg-base-100 shadow-xl mr-4 my-5 text-center"
+            key={cat.id}
+          >
             <figure>
-              <img
-                src={cat.picture}
-                alt="picture"
-              />
+              <img src={cat.picture} alt="picture" />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">
-                {cat.title}
-              </h2>
+              <h2 className="card-title">{cat.title}</h2>
               <p>{cat.details}</p>
-              
             </div>
           </div>
-          
-        )}
+        ))}
       </div>
     </div>
   );

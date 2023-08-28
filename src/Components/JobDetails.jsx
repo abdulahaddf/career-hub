@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import { addToDb } from "../Utils/fakeDb";
+import { addToDb } from "../Utils/realDb";
 import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
@@ -17,19 +17,23 @@ const JobDetails = () => {
     educationalRequirements,
     experience,
     contactInformation,
+    logo,
   } = jobs;
   const { phone, email, address } = contactInformation;
 
-  
-  const notify = () => toast("Congrats! You have applied the job"); 
+  const notify = () => toast("Congrats! You have applied the job");
 
   return (
     <div>
-      <div className="bg-gray-100 ">
-        <h1 className="text-5xl font-bold text-center h-32">Job details</h1>
+      <div className="bg-gray-100">
+        <h1 className="text-5xl font-bold text-center h-24">Job details</h1>
       </div>
-      <div className="glass shadow-xl md:flex max-w-6xl mx-auto my-5 p-2 ">
+      <div className="glass shadow-xl md:flex max-w-6xl mx-auto my-20 rounded-lg p-10  ">
         <div className="leading-10">
+          <div className="w-96 mx-auto my-5">
+            <img src={logo} alt="" />
+          </div>
+
           <h1>
             <span className="font-bold text-lg">Job Description:</span>
             {description}
@@ -82,22 +86,21 @@ const JobDetails = () => {
             <button onClick={() => addToDb(id)} className="btn btn-primary">
               Apply Now
             </button>
-            
           </div>
         </div>
       </div>
       <ToastContainer
-              position="top-center"
-              autoClose={5000}
-              hideProgressBar={false}
-              newestOnTop={false}
-              closeOnClick
-              rtl={false}
-              pauseOnFocusLoss
-              draggable
-              pauseOnHover
-              theme="light"
-            />
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 };
