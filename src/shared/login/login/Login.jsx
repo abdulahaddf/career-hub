@@ -144,7 +144,7 @@ const Login = () => {
             </div>
           </div>
           <div className="mt-6">
-            <button className="w-full px-4 py-2 tracking-wide transition-colors duration-200 transform bg-cyan-500   focus:outline-none focus:bg-cyan-600">
+            <button id="login" className="class-login w-full px-4 py-2 tracking-wide transition-colors duration-200 transform bg-cyan-500   focus:outline-none focus:bg-cyan-600">
               Login
             </button>
           </div>

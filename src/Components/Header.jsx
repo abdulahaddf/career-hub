@@ -33,14 +33,15 @@ const Header = () => {
                   <img className="rounded-full" src={user?.photoURL} />
                 </div>
                 <button
+                id='logout'
                   onClick={handleLogOut}
-                  className="btn btn-primary"
+                  className="btn btn-primary logout-btn"
                 >
                   Log Out
                 </button>
               </div>
             ) : (
-              <Link to="/login" className="btn btn-primary">
+              <Link id='login' to="/login" className="btn btn-primary login-btn">
                 Login
               </Link>
             )}
